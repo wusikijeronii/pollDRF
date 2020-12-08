@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../static/script.js"></script>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    <form action="" method="post" id="login">
+        {% csrf_token %}
+        {{ form }}
+        <input type="text" name="userID">
+        <input type="submit" value="Login">
+        <input type="submit" value="Create New User">
+    </form>
+    <div class="userData"></div>
+</body>
+
+</html>
